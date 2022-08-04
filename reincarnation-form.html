@@ -1,0 +1,50 @@
+
+<!--Forma con diferentes elementos-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+  <link rel="stylesheet" href="styles.css"
+  <meta charset="utf-8">
+    <title>Reincarnation Application</title>
+  </head>
+  <body class="color-back">
+    <h1 id="title">Reincarnation Application</h1>
+    <p id="description">Welcome, this form will help you apply for a reincarnation service.</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label">Enter your Name: <input id="name" type="text" placeholder="Your name" required></label>
+       <label id="email-label">Enter your Email: <input id="email" type="email" placeholder="Your email" required></label>
+       <label id="number-label">Enter the times you've already reincarnated: <input id="number" type="number" min="0" max="6" placeholder="Remember the max is 6"></label>
+      </fieldset>
+      <fieldset>
+       <label>Plese select your reincarnation being
+        <select name="referrer" id="dropdown">
+          <option>select one</option>
+          <option>Frog</option>
+          <option>Lettuce</option>
+          <option>Dirt</option>
+          <option>Action movie stunt</option>
+        </select></label>
+      </fieldset>
+      <fieldset>
+        <label>Select your reincarnation package</label>
+        <label><input type="radio" name="package" id="mortal" value="mortal" class="inline"> Mortal</label>
+        <label><input type="radio" name="package" id="premium" value="premium" class="inline"> Premium</label>
+        <label><input type="radio" name="package" id="bodhisattva" value="bodhisattva" class="inline"> Bodhisattva</label>
+      </fieldset>
+      <fieldset>
+        <label>Select your <em>spells</em></label>
+        <label><input type="checkbox" value="htf" class="inline"> Hand-To-Foot</label>
+        <label><input type="checkbox" value="embaldment" class="inline"> Embaldment</label>
+        <label><input type="checkbox" value="eye-contact" class="inline"> Eye-Contact</label>
+        <label><input type="checkbox" value="tv" class="inline"> TV</label>
+        <label><input type="checkbox" value="love" class="inline"> Love</label>
+      </fieldset>
+      <fieldset>
+        <label>Aditional Requests: </label>
+        <textarea name="requests" rows="2" cols="20"></textarea>
+      </fieldset>
+      <input type="submit" id ="submit" value="Submit" />
+      </form>
+</html>
